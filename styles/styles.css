@@ -17,6 +17,11 @@ h5{
   margin: 5px auto 25px;
 }
 
+h6{
+  font-size: 0.9em;
+  margin: 5px auto 25px;
+}
+
 .grid-container{
   margin: 16% 6%;
 }
@@ -27,6 +32,7 @@ h5{
 
 .info-div{
   background-color: white;
+  border-radius: 8px 8px 0  0;
   color: cyan;
   color: hsl(179, 62%, 43%);
 }
@@ -46,12 +52,65 @@ h5{
   background-color: hsl(179, 62%, 43%);
 }
 
+.signup{
+  background-color: hsl(71, 73%, 54%);
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 8px hsl(179, 62%, 39%);
+  color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  margin: 20px auto 10px;
+  padding: 5%;
+  width: 100%;
+}
+
+.signup:hover{
+  opacity: 0.7;
+}
+
+.cost{
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.cost-month{
+  color: hsl(179, 62%, 80%);
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.cost-p-day{
+  font-size: 16px;
+}
+
 .benefits-div{
   background-color: MediumTurquoise;
   background-color: hsl(179, 62%, 60%);
+  border-radius: 0 0 8px 8px;
 }
 
 .benefits-p{
-  color: hsl(204, 43%, 93%);
+  color: hsl(204, 43%, 90%);
   line-height: 1.5em;
+}
+
+@media (min-width: 375px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10% 25%;
+  }
+
+  .grid-item{
+    width: 50%;
+  }
+
+  .info-div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
 }

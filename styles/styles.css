@@ -26,15 +26,12 @@ h6{
   margin: 16% 6%;
 }
 
-.grid-container > div{
-  padding: 6%;
-}
-
 .info-div{
   background-color: white;
   border-radius: 8px 8px 0  0;
   color: cyan;
   color: hsl(179, 62%, 43%);
+  padding: 6%;
 }
 
 .info-h6 {
@@ -50,6 +47,7 @@ h6{
 
 .subscription-div{
   background-color: hsl(179, 62%, 43%);
+  padding: 6%;
 }
 
 .signup{
@@ -88,8 +86,9 @@ h6{
 
 .benefits-div{
   background-color: MediumTurquoise;
-  background-color: hsl(179, 62%, 60%);
+  background-color: hsl(179, 62%, 47%);
   border-radius: 0 0 8px 8px;
+  padding: 6%;
 }
 
 .benefits-p{
@@ -98,10 +97,18 @@ h6{
 }
 
 @media (min-width: 375px) {
+  p{
+    line-height: 1.5em;
+  }
+
+  h5{
+    font-size: 1.2em;
+  }
+
   .grid-container{
     display: grid;
     grid-template-columns: auto auto;
-    margin: 10% 25%;
+    margin: 10% 30%;
   }
 
   .grid-item{
@@ -111,6 +118,36 @@ h6{
   .info-div{
     grid-column-start: 1;
     grid-column-end: 3;
+    padding: 40px;
+  }
+
+  .info-h6{
+    font-size: 17px;
+    margin: 30px auto 10px;
+  }
+
+  .info-p{
+    font-size: 15px;
+  }
+
+  .subscription-div{
+    border-radius: 0 0 0 8px;
+    padding: 40px;
+  }
+
+  .cost-p-day{
+    margin-top: 10px;
+    color: hsl(204, 43%, 93%);
+  }
+
+  .benefits-div{
+    border-radius: 0 0 8px 0;
+    padding: 40px;
+  }
+
+  .signup{
+    width: 100%;
+    margin: 30px auto 0;
   }
 
 }

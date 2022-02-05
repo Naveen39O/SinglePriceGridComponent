@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -10,46 +11,60 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; color: black }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: black
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-  <div class="grid-container">
-    <div class="info-div">
-      <h5>Join our community</h5>
+  <main>
 
-      <h6 class = "info-h6">30-day, hassle-free money back guarantee</h6>
+    <div class="grid-container">
+      <div class="info-div">
+        <h1>Join our community</h1>
 
-      <p class="info-p">Gain access to our full library of tutorials along with expert code reviews.
-      Perfect for any developers who are serious about honing their skills.</p>
+        <h6 class="info-h6">30-day, hassle-free money back guarantee</h6>
+
+        <p class="info-p">Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      <div class="subscription-div ">
+        <h6>Monthly Subscription</h6>
+
+        <div class="cost-div">
+          <span class="cost">&dollar;29</span>
+          <span class="cost-month"> per month</span>
+        </div>
+
+        <p class="cost-p-day">Full access for less than &dollar;1 a day</p>
+
+        <button class="signup" type="button" name="button">Sign Up</button>
+      </div>
+      <div class="benefits-div">
+        <h6>Why Us</h6>
+
+        <p class="benefits-p">Tutorials by industry experts<br />
+          Peer &amp; expert code review<br />
+          Coding exercises<br />
+          Access to our GitHub repos<br />
+          Community forum<br />
+          Flashcard decks<br />
+          New videos every week</p>
+      </div>
+
     </div>
-    <div class="subscription-div ">
-      <h6>Monthly Subscription</h6>
-
-      <span class="cost">&dollar;29</span><span class="cost-month"> per month</span>
-
-      <p class="cost-p-day">Full access for less than &dollar;1 a day</p>
-
-      <button class="signup" type="button" name="button">Sign Up</button>
-    </div>
-    <div class="benefits-div">
-      <h6>Why Us</h6>
-
-      <p class="benefits-p">Tutorials by industry experts<br />
-      Peer &amp; expert code review<br />
-      Coding exercises<br />
-      Access to our GitHub repos<br />
-      Community forum<br />
-      Flashcard decks<br />
-      New videos every week</p>
-    </div>
-
-  </div>
+  </main>
 
   <footer>
     <p class="attribution">
@@ -58,4 +73,5 @@
     </p>
   </footer>
 </body>
+
 </html>

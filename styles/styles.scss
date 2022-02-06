@@ -1,172 +1,180 @@
-body {
-  background-color: #e5eff5;
+$lightGrey: hsl(204, 43%, 93%);
+$cyan : hsl(179, 62%, 43%);
+$lightCyan : hsl(179, 62%, 46%);
+$brightYellow : hsl(71, 73%, 54%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+
+body{
+  background-color: $lightGrey;
   box-sizing: border-box;
   color: white;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
-p {
+p{
   font-size: 14px;
   line-height: 2em;
   margin: 5px auto;
 }
 
-h1 {
+h1{
   font-size: 1em;
   margin: 5px auto 25px;
 }
 
-h6 {
+h6{
   font-size: 0.9em;
   margin: 5px auto 25px;
 }
 
-.grid-container {
+.grid-container{
   margin: 16% 6%;
 }
 
-.info-div {
+.info-div{
   background-color: white;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0  0;
   color: cyan;
-  color: #2ab2af;
+  color: $cyan;
   padding: 6%;
 }
 
 .info-h6 {
-  color: #c0df34;
+  color: $brightYellow;
   font-size: 15px;
   font-weight: 700;
   margin: 25px auto;
 }
 
-.info-p {
-  color: #98a6bd;
+.info-p{
+  color: $grayishBlue;
 }
 
-.subscription-div {
-  background-color: #2ab2af;
+.subscription-div{
+  background-color: $cyan;
   padding: 6%;
 }
 
-.signup {
-  background-color: #c0df34;
+.signup{
+  background-color: $brightYellow;
   border-style: none;
   border-radius: 5px;
-  box-shadow: 0 10px 8px #26a19f;
-  color: #e5eff5;
-  font-family: "Karla", sans-serif;
+  box-shadow: 0 10px 8px hsl(179, 62%, 39%);
+  color: $lightGrey;
+  font-family: 'Karla', sans-serif;
   font-weight: bold;
   margin: 20px auto 10px;
   padding: 5%;
   width: 100%;
 }
 
-.signup:hover {
+.signup:hover{
   opacity: 0.7;
 }
 
-.cost {
+.cost{
   font-size: 1.5em;
   color: white;
   font-weight: bold;
   padding-right: 5px;
 }
 
-.cost-month {
-  color: #e5eff5;
+.cost-month{
+  color: $lightGrey;
   font-size: 16px;
   opacity: 0.5;
 }
 
-.cost-p-day {
+.cost-p-day{
   font-size: 16px;
 }
 
-.benefits-div {
-  background-color: #2dbebc;
+.benefits-div{
+  background-color: $lightCyan;
   border-radius: 0 0 8px 8px;
   padding: 6%;
 }
 
-.benefits-p {
-  color: #e5eff5;
+.benefits-p{
+  color: $lightGrey;
   line-height: 1.5em;
 }
 
 @media (min-width: 375px) {
-  p {
+  p{
     line-height: 1.5em;
   }
 
-  h1 {
+  h1{
     font-size: 1.3em;
   }
 
-  h6 {
+  h6{
     font-size: 1em;
     margin: 5px auto 15px;
   }
 
-  .grid-container {
+  .grid-container{
     display: grid;
     grid-template-columns: 50% 50%;
   }
 
-  .info-div {
+  .info-div{
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 40px;
   }
 
-  .info-h6 {
+  .info-h6{
     font-size: 18px;
     margin: 30px auto 10px;
   }
 
-  .info-p {
+  .info-p{
     font-size: 16px;
   }
 
-  .subscription-div {
+  .subscription-div{
     border-radius: 0 0 0 8px;
     padding: 40px;
   }
 
-  .cost-p-day {
+  .cost-p-day{
     font-size: 16px;
   }
 
-  .cost {
+  .cost{
     font-size: 2em;
   }
 
-  .cost-div {
+  .cost-div{
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
 
-  .benefits-div {
+  .benefits-div{
     border-radius: 0 0 8px 0;
     padding: 40px;
   }
 
-  .signup {
+  .signup{
     font-size: 20px;
     margin: 15px auto 0;
     padding: 5%;
   }
+
 }
-@media (min-width: 375px) {
-  .grid-container {
+
+@media (min-width: 375px){
+  .grid-container{
     margin: 20% 10%;
   }
 }
-@media (min-width: 700px) {
-  .grid-container {
+
+@media (min-width: 700px){
+  .grid-container{
     margin: 12% 28%;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
